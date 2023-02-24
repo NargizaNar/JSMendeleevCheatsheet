@@ -1,0 +1,2 @@
+## Method 
+A method is a function which is a property of an object. There are two kinds of methods: instance methods which are built-in tasks performed by an object instance, or static methods which are tasks that are called directly on an object constructor.
