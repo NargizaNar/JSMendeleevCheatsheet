@@ -18,7 +18,7 @@ function evaluate(inputStr) {
             return "./1Chars/1char5Loop.md";
         case inputStr === "char+compare" || inputStr === "compare+char":
             return "./1Chars/1charCompare.md";
-          //case inputStr === "char+info" || "info+char":
+        //replaced one line below: case inputStr === "char+info" || "info+char":
         case inputStr === "char":
             return "./1Chars/1charInfo.md";
         case inputStr === "char+extract" || inputStr === "extract+char":
@@ -27,69 +27,73 @@ function evaluate(inputStr) {
             return "./1Chars/1charReplace.md";
         case inputStr === "char+special" || inputStr === "special+char":
             return "./1Chars/1charSpecial.md";
-        case inputStr === "string+string" :
+//// !!!case inputStr === "string+string" :
+           //// return "./2Strings/2string2String.md";
+        case inputStr === "string+string":
             return "./2Strings/2string2String.md";
-        // case inputStr === "string+boolean"|| inputStr === "boolean+string":
-        //     return "./2Strings/2string3Boolean.md", see 3boolean2String.md
-        case inputStr === "string+number" || inputStr === "number+string":
-            return "./2Strings/2string4Number.md";
-        case inputStr === "string+loop" || inputStr === "loop+string":
-            return "./2Strings/2string5Loop.md";
-        case inputStr === "string+extract" || inputStr === "extract+string":
-            return "./2Strings/2stringExtract.md";
-        //case inputStr === "string+info" || inputStr === "info+string":
-        case inputStr === "string":
-            return "./2Strings/2stringInfo.md";
-        case inputStr === "string+replace" || inputStr === "replace+string":
-            return "./2Strings/2stringReplace.md";
+        // merged with 3boolean2String.md: case inputStr === "string+boolean"|| inputStr === "boolean+string":
+        //     return "./2Strings/2string3Boolean.md"
+        // merged with 4num2String: case inputStr === "string+number" || inputStr === "number+string":
+            //return "./2Strings/2string4Number.md";
+        // merged with see 5Loops/5loop2String.md: case inputStr === "string+loop" || inputStr === "loop+string":
+          //  return "./2Strings/2string5Loop.md";
+//!!case inputStr === "string+extract" || inputStr === "extract+string":
+            //return "./2Strings/2stringExtract.md";
+        //replaced one line below: case inputStr === "string+info" || inputStr === "info+string":
+//!!case inputStr === "string":
+           // return "./2Strings/2stringInfo.md";
+//!!case inputStr === "string+replace" || inputStr === "replace+string":
+            //return "./2Strings/2stringReplace.md";
         case inputStr === "boolean+string" || inputStr === "string+boolean":
             return "./3Boolean/3boolean2String.md";
-        // case inputStr === "boolean+number"|| inputStr === "number+boolean":
-        //     return "./3Boolean/3boolean4Number.md" see 4number3Boolean
+        // merged with 4number3Boolean:  case inputStr === "boolean+number"|| inputStr === "number+boolean":
+        //     return "./3Boolean/3boolean4Number.md" 
         case inputStr === "boolean+loop" || inputStr === "loop+boolean":
             return "./3Boolean/3boolean5Loop.md";
         case inputStr === "boolean+compare" || inputStr === "compare+boolean":
             return "./3Boolean/3booleanCompare.md";
-        //case inputStr === "boolean+info" || inputStr === "info+boolean":
+        //repalced one line below: case inputStr === "boolean+info" || inputStr === "info+boolean":
         case inputStr === "boolean":
             return "./3Boolean/3booleanInfo.md";
         case inputStr === "boolean+special" || inputStr === "special+boolean":
             return "./3Boolean/3booleanSpecial.md";
         case inputStr === "number+boolean" || inputStr === "boolean+number":
             return "./4Numbers/4num3Boolean.md";
+        case inputStr === "number+string" || inputStr === "string+number":
+            return "./4Numbers/4num2String.md";
         case inputStr === "number+number":
             return "./4Numbers/4num4Num.md";
-        // case inputStr === "number+loop"|| inputStr === "loop+number":
-        //     return "./4Numbers/4num5Loop.md", see 5loop4Number.md
+        // merged with see 5loop4Number.md: case inputStr === "number+loop"|| inputStr === "loop+number":
+        //     return "./4Numbers/4num5Loop.md"
         case inputStr === "number+array" || inputStr === "array+number":
             return "./4Numbers/4num6Array.md";
         case inputStr === "number+compare" || inputStr === "compare+number":
             return "./4Numbers/4numCompare.md";
-        //case inputStr === "number+info" || inputStr === "info+number":
+        //replaced one line below: case inputStr === "number+info" || inputStr === "info+number":
         case inputStr === "number":
             return "./4Numbers/4numInfo.md";
         case inputStr === "number+replace" || inputStr === "replace+number":
             return "./4Numbers/4numReplace.md";
-        // case inputStr === "loop+string"|| inputStr === "string+loop":
-        //     return "./5Loops/5loop2String.md", see 2string5Loop.md
+       case inputStr === "loop+string"|| inputStr === "string+loop":
+            return "./5Loops/5loop2String.md"
         case inputStr === "loop+boolean" || inputStr === "boolean+loop":
             return "./5Loops/5loop3Boolean.md";
         case inputStr === "loop+number" || inputStr === "number+loop":
             return "./5Loops/5loop4Number.md";
         case inputStr === "loop+array" || inputStr === "array+loop":
             return "./5Loops/5loop6Array.md";
-        //case "loop+info" || inputStr === "info+loop":
+        //replace one line below: case "loop+info" || inputStr === "info+loop":
         case inputStr === "loop":
             return "./5Loops/5loopInfo.md";
-        // case inputStr === "array+number"|| inputStr === "number+array":
-        //     return "./6Arrays/6array4Number.md", see 4number6Array.md
-        // case inputStr === "array+loop"|| inputStr === "loop+array":
-        //     return "./6Arrays/6array5Loop.md" see 5loop6Array.md   
-        //moved to Array + Replace now: case inputStr === "array+Add" || inputStr === "Add+array":
+        // merged with 4number6Array.md: case inputStr === "array+number"|| inputStr === "number+array":
+        //     return "./6Arrays/6array4Number.md"
+        // merged with  5loop6Array.md : case inputStr === "array+loop"|| inputStr === "loop+array":
+        //     return "./6Arrays/6array5Loop.md"   
+        // reaplaced with Array + Replace: case inputStr === "array+Add" || inputStr === "Add+array":
             //return "./6Arrays/6arrayAdd.md";
         case inputStr === "array+extract" || inputStr === "extract+array":
             return "./6Arrays/6arrayExtract.md";
-        //case inputStr === "array+info" || inputStr === "info+array":
+        //replaced with a line below: case inputStr === "array+info" || inputStr === "info+array":
         case inputStr === "array":
             return "./6Arrays/6arrayInfo.md";
         case inputStr === "array+remove" || inputStr === "remove+array":
@@ -104,9 +108,9 @@ function evaluate(inputStr) {
             return "./7Classes/7class3Boolean.md";
         case inputStr === "class+number" || inputStr === "number+class":
             return "./7Classes/7class4Number.md";
-        //moved to Class + Replace case inputStr === "class+add" || inputStr === "add+class":
+        // replaced with a combination  Class + Replace: case inputStr === "class+add" || inputStr === "add+class":
           //  return "./7Classes/7classAdd.md";
-       // see below - case inputStr === "class+info" || inputStr === "info+class":
+       // replaced with a line below: case inputStr === "class+info" || inputStr === "info+class":
         case inputStr === "class":
             return "./7Classes/7classInfo.md";
         case inputStr === "class+replace" || inputStr === "replace+class":
@@ -127,11 +131,11 @@ function evaluate(inputStr) {
             return "./8Objects/8object6Array.md";
         case inputStr === "object+object":
             return "./8Objects/8object8Object.md";
-        //moved to Object+Replace : case inputStr === "object+add" || inputStr === "add+object":
+        //replaced with a combination Object+Replace : case inputStr === "object+add" || inputStr === "add+object":
           //  return "./8Objects/8objectAdd.md";
         case inputStr === "object+extract" || inputStr === "extract+object":
             return "./8Objects/8objectExtract.md";
-        //case inputStr === "object+info" || inputStr === "info+object":
+        //replaced with a line below: case inputStr === "object+info" || inputStr === "info+object":
         case inputStr === "object":
             return "./8Objects/8objectInfo.md";
         case inputStr === "object+remove" || inputStr === "remove+object":
@@ -140,7 +144,7 @@ function evaluate(inputStr) {
             return "./8Objects/8objectReplace.md";
         case inputStr === "isNaN+number" || inputStr === "number+NaN":
             return "./9NaN/9isNaN4Number.md";
-        //case inputStr === "isNaN+info" || inputStr === "info+NaN":
+        //replaced with a line below: case inputStr === "isNaN+info" || inputStr === "info+NaN":
         case inputStr === "isNaN":
             return "./9NaN/9isNaNInfo.md";
         case inputStr === "isNaN+string" || inputStr === "string+NaN":
@@ -151,35 +155,45 @@ function evaluate(inputStr) {
             return "./9NaN/9typeof4Number.md";
         case inputStr === "typeof+array" || inputStr === "array+typeof":
             return "./9NaN/9typeof6Array.md";
-        /////// !!!!!case inputStr === "typeof+array" || inputStr === "array+typeof":
+// !!!!!case inputStr === "typeof+array" || inputStr === "array+typeof":
             //return "./9NaN/9typeof6Array.md";
-        //case inputStr === "typeof+info" || inputStr === "info+typeof":
-        // moved to NaN info: case inputStr === "typeof":
+        //moved to NaN info: case inputStr === "typeof+info" || inputStr === "info+typeof":
+//!!! merged with NaN info: case inputStr === "typeof":
            // return "./9NaN/9typeofInfo.md";
         case inputStr === "function+char" || inputStr === "char+function":
-            return "./10Functions/10function1Char.md";
+            //replaced: return "./10Functions/10function1Char.md";
+            return "./1Chars/1char10Function.md";
         case inputStr === "function+string" || inputStr === "string+function":
             return "./10Functions/10function2String.md";
         case inputStr === "function+boolean" || inputStr === "boolean+function":
-            return "./10Functions/10function3Boolean.md";
+            // !!replaced: return "./10Functions/10function3boolean.md";
+            return "./3Boolean/3boolean10Function.md";
         case inputStr === "function+number" || inputStr === "number+function":
-            return "./10Functions/10function4Number.md";
+            // !! replaced: return "./10Functions/10function4Number.md";
+        case inputStr === "function+number" || inputStr === "number+function":
+            return "./4Numbers/4num10Function.md";
         case inputStr === "function+array" || inputStr === "array+function":
             return "./10Functions/10function6Array.md";
         case inputStr === "function+object" || inputStr === "object+function":
             return "./10Functions/10function8Object.md";
         case inputStr === "function+loop" || inputStr === "loop+function":
             return "./10Functions/10function5Loop.md";
-        case inputStr === "function+info" || inputStr === "info+function":
+        //replaced with a line below: case inputStr === "function+info" || inputStr === "info+function":
+        case inputStr === "function":
             return "./10Functions/10functionInfo.md";
         case inputStr === "function+special" || inputStr === "special+function":
             return "./10Functions/10functionSpecial.md";
         case inputStr === "method+object" || inputStr === "object+method":
             return "./11Methods/11method8Object.md";
-        case inputStr === "method+info" || inputStr === "info+method":
+        case inputStr === "method+string"|| inputStr === "string+method":
+            return "./11Methods/11method2String.md";
+        //replaced with a line below: case inputStr === "method+info" || inputStr === "info+method":
+        case inputStr === "method":
             return "./11Methods/11methodInfo.md";
+        case inputStr === "info, press = ":
+            return "./11Methods/GeneralInfo.md";
         default:
-            return "No info with this combination";
+            return "No info added yet";
     }    
 }
 

@@ -1,3 +1,4 @@
+# General
 ## isNaN()
 The global NaN property is a value representing Not-A-Number.
 ## Example 

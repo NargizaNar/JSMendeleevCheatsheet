@@ -1,3 +1,4 @@
+<!-- moved to ## Loop + String ; 
 ## String + Loop || Loop + String
 
 ## Example 1 
@@ -15,4 +16,4 @@ const wordRepeater = x => {
 console.log(wordRepeater("Cat food"));
 // Cat Cat food food
 console.log(wordRepeater("O M G ?"));
-//O O O O M M M M G G G G ? ? ? ?
+//O O O O M M M M G G G G ? ? ? ? -->
